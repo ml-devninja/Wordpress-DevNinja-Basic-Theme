@@ -1,0 +1,26 @@
+@function kvp-key($kvp) {
+  @return nth($kvp, 1);
+}
+
+@function kvp-value($kvp) {
+  @if length($kvp) == 2 {
+    @return nth($kvp, 2);
+  } @else {
+    @warn "argument was not a key-value pair";
+    @return null;
+  }
+}
+
+
+
+
+// HOW TO SUE
+// $products: class1 #C00, class2 #00C, class3 #0C0, class4 #000;
+// @each $kvp in $products { // kvp stands for 'key-value pair'
+//    .page-#{kvp-key($kvp)} {
+//        a {
+//            color: kvp-value($kvp);
+//        }
+//    }
+// }
+

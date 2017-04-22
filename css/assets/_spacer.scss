@@ -1,0 +1,9 @@
+@while ($spacing-quantity > 0) {
+
+  .spacer__x#{$spacing-quantity}{
+    padding-top:$default-spacing * $spacing-quantity;
+    padding-bottom:$default-spacing * $spacing-quantity;
+  }
+
+  $spacing-quantity: $spacing-quantity - 1
+}

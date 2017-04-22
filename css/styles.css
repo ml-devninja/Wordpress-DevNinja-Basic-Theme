@@ -1,0 +1,53 @@
+@import url(dependencies/bootstrap.min.css);
+/**
+HERE YOU CAN OVERWRITE OPTIONS
+ */
+.debugger {
+  background: #e8e8e8 !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px !important;
+  padding-top: 150px !important;
+  overflow: scroll;
+  height: 100vh;
+  z-index: 99999; }
+
+.display__flex {
+  display: flex; }
+  .display__flex.flex-wrap {
+    flex-wrap: wrap; }
+
+.spacer__x3 {
+  padding-top: 45px;
+  padding-bottom: 45px; }
+
+.spacer__x2 {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.spacer__x1 {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.ratio-square {
+  height: 0;
+  padding-bottom: 100%;
+  position: relative; }
+  .ratio-square > .square-center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+header {
+  background: #fff; }
+
+footer {
+  background: #606060; }
+
+/*# sourceMappingURL=styles.css.map */
